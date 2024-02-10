@@ -1,26 +1,6 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\ModuleData\\ModuleAssets",
-            "name": "ModuleAssets",
-            "summary": "Module\u0020assets\u0020data.",
-            "url": "classes/Rdb-Modules-RdbAdmin-ModuleData-ModuleAssets.html"
-        },                {
-            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\ModuleData\\ModuleAssets\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Class\u0020constructor.",
-            "url": "classes/Rdb-Modules-RdbAdmin-ModuleData-ModuleAssets.html#method___construct"
-        },                {
-            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\ModuleData\\ModuleAssets\u003A\u003AgetModuleAssets\u0028\u0029",
-            "name": "getModuleAssets",
-            "summary": "Get\u0020module\u0027s\u0020assets\u0020list.",
-            "url": "classes/Rdb-Modules-RdbAdmin-ModuleData-ModuleAssets.html#method_getModuleAssets"
-        },                {
-            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\ModuleData\\ModuleAssets\u003A\u003A\u0024Container",
-            "name": "Container",
-            "summary": "",
-            "url": "classes/Rdb-Modules-RdbAdmin-ModuleData-ModuleAssets.html#property_Container"
-        },                {
             "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Console\\CreateAdminController",
             "name": "CreateAdminController",
             "summary": "RdbAdmin\u0020create\u0020an\u0020admin\u0020controller\u0020CLI.",
@@ -3516,15 +3496,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Rdb-Modules-RdbAdmin-ModuleData-ModuleAdmin.html#property_Container"
         },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\ModuleData\\ModuleAssets",
+            "name": "ModuleAssets",
+            "summary": "Module\u0020assets\u0020data.",
+            "url": "classes/Rdb-Modules-RdbAdmin-ModuleData-ModuleAssets.html"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\ModuleData\\ModuleAssets\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Class\u0020constructor.",
+            "url": "classes/Rdb-Modules-RdbAdmin-ModuleData-ModuleAssets.html#method___construct"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\ModuleData\\ModuleAssets\u003A\u003AgetModuleAssets\u0028\u0029",
+            "name": "getModuleAssets",
+            "summary": "Get\u0020module\u0027s\u0020assets\u0020list.",
+            "url": "classes/Rdb-Modules-RdbAdmin-ModuleData-ModuleAssets.html#method_getModuleAssets"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\ModuleData\\ModuleAssets\u003A\u003A\u0024Container",
+            "name": "Container",
+            "summary": "",
+            "url": "classes/Rdb-Modules-RdbAdmin-ModuleData-ModuleAssets.html#property_Container"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
-        },                {
-            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\ModuleData",
-            "name": "ModuleData",
-            "summary": "",
-            "url": "namespaces/rdb-modules-rdbadmin-moduledata.html"
         },                {
             "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Console",
             "name": "Console",
@@ -3705,5 +3700,10 @@ Search.appendIndex(
             "name": "Traits",
             "summary": "",
             "url": "namespaces/rdb-modules-rdbadmin-models-traits.html"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\ModuleData",
+            "name": "ModuleData",
+            "summary": "",
+            "url": "namespaces/rdb-modules-rdbadmin-moduledata.html"
         }            ]
 );
