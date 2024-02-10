@@ -57,7 +57,7 @@
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="namespaces/rdb.html" class="-active">Rdb</a>
+    <a href="namespaces/rdb.html" class="">Rdb</a>
 </h4>
     <ul class="phpdocumentor-list">
                     <li>
@@ -97,25 +97,60 @@
                                         <ul class="phpdocumentor-breadcrumbs">
     </ul>
 
-    <article class="phpdocumentor-element -namespace">
-        <h2 class="phpdocumentor-content__title">Rdb</h2>
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">routes.php</h2>
 
-        
+            <p class="phpdocumentor-summary">Routes configuration.</p>
+
+    <section class="phpdocumentor-description"><p>Use route collector from FastRoute directly.<br>
+Example:</p>
+<pre class="prettyprint">
+$Rc->addRoute($this->filterMethod('any'), '/', '\\Rdb\\System\\Core\\Controllers\\Default:index');
+$Rc->addGroup('/admin', function (\FastRoute\RouteCollector $Rc) {
+    $Rc->addRoute('GET', '', '\\Rdb\\Modules\\Admin\\Controllers\\Admin\\Index:index');
+    $Rc->addRoute('GET', '/login', '\\Rdb\\Modules\\Admin\\Controllers\\Admin\\Login:index');
+    $Rc->addGroup('/users', , function (\FastRoute\RouteCollector $Rc) {
+        $Rc->addRoute('GET', '', '\\Rdb\\Modules\\Users\\Controllers\\Admin\\Users:index');
+    });
+});
+</pre>
+<p>The HTTP method must be upper case or use <code class="prettyprint">$this-&gt;filterMethod('any')</code> to get methods in array <code class="prettyprint">['GET', 'HEAD', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH']</code>.</p>
+<p>Fore more reference, please look at FastRoute document. https://github.com/nikic/FastRoute</p>
+<p>You can use methods from <code class="prettyprint">\Rdb\System\Router</code> class directly via <code class="prettyprint">$this</code> object since this file will be include into the class.<br>
+The class in handler will be automatically add <code class="prettyprint">Controller</code> suffix, and the method in handler will be automatically add <code class="prettyprint">Action</code> suffix.<br>
+<code class="prettyprint">Users:index</code> will be <code class="prettyprint">UsersController</code> class and <code class="prettyprint">indexAction</code> method.</p>
+<p>This config is working in modules.</p>
+</section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="files/config-default-routes.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">license</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>http://opensource.org/licenses/MIT MIT</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+
+
 <h3 id="toc">
     Table of Contents
-    <a href="namespaces/rdb.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="files/config-default-routes.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
 
-<h4 id="namespaces">
-    Namespaces
-    <a href="namespaces/rdb.html#namespaces" class="headerlink"><i class="fas fa-link"></i></a>
 
-</h4>
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/rdb-system.html"><abbr title="\Rdb\System">System</abbr></a></dt>
-    </dl>
+
 
 
 
@@ -133,7 +168,7 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/config/default/routes.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -253,7 +288,7 @@
     </section>
 </section>
         </div>
-        <a href="namespaces/rdb.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="files/config-default-routes.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
