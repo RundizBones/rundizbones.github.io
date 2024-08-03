@@ -247,6 +247,27 @@
 </dt>
 <dd>List permissions saved in DB.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_checkPermissionVerifyIdentity">checkPermissionVerifyIdentity()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Verify and get identities.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_checkPermissionVerifyRoleHighestPriority">checkPermissionVerifyRoleHighestPriority()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Verify that this user&#039;s role is highest priority.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_getCacheObject">getCacheObject()</a>
+    <span>
+                                &nbsp;: <abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>    </span>
+</dt>
+<dd>Get cache object.</dd>
+
     </dl>
 
 
@@ -559,7 +580,7 @@ In order of default auto detect, it will check for role's permission first but i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Models/UserPermissionsDb.php"><a href="files/models-userpermissionsdb.html"><abbr title="Models/UserPermissionsDb.php">UserPermissionsDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">296</span>
+    <span class="phpdocumentor-element-found-in__line">359</span>
 
     </aside>
 
@@ -613,7 +634,7 @@ In order of default auto detect, it will check for role's permission first but i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Models/UserPermissionsDb.php"><a href="files/models-userpermissionsdb.html"><abbr title="Models/UserPermissionsDb.php">UserPermissionsDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">330</span>
+    <span class="phpdocumentor-element-found-in__line">393</span>
 
     </aside>
 
@@ -661,7 +682,7 @@ Following keys must use together.<br>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Models/UserPermissionsDb.php"><a href="files/models-userpermissionsdb.html"><abbr title="Models/UserPermissionsDb.php">UserPermissionsDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">383</span>
+    <span class="phpdocumentor-element-found-in__line">441</span>
 
     </aside>
 
@@ -713,7 +734,7 @@ Following keys must use together.<br>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Models/UserPermissionsDb.php"><a href="files/models-userpermissionsdb.html"><abbr title="Models/UserPermissionsDb.php">UserPermissionsDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">429</span>
+    <span class="phpdocumentor-element-found-in__line">506</span>
 
     </aside>
 
@@ -754,6 +775,271 @@ Following keys must use together.<br>
                 <section class="phpdocumentor-description"><p>Return associative array with <code class="prettyprint">total</code> and <code class="prettyprint">items</code> in keys.</p>
 </section>
 
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_checkPermissionVerifyIdentity">
+        checkPermissionVerifyIdentity()
+        <a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_checkPermissionVerifyIdentity" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Models/UserPermissionsDb.php"><a href="files/models-userpermissionsdb.html"><abbr title="Models/UserPermissionsDb.php">UserPermissionsDb.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">191</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Verify and get identities.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">checkPermissionVerifyIdentity</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identity</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$Cache</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cacheExpire</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$cacheKeyRolesData</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p>This method's visibility must be <code class="prettyprint">protected</code> to let extended class use it.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$identity</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The identity.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$Cache</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The cache object.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$cacheExpire</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The cache expiration TTL.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$cacheKeyRolesData</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Cache key of roles data. This parameter will be altered for later usage.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_checkPermissionVerifyIdentity#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">1.2.10</span>
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Rdb\Modules\KPApartment\Models\UserPermissionsDb::checkPermissionPerBuilding()">UserPermissionsDb::checkPermissionPerBuilding()</abbr></span>
+                                        
+                                                 <section class="phpdocumentor-description"><p>For reference.</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Return verified and get identities.</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_checkPermissionVerifyRoleHighestPriority">
+        checkPermissionVerifyRoleHighestPriority()
+        <a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_checkPermissionVerifyRoleHighestPriority" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Models/UserPermissionsDb.php"><a href="files/models-userpermissionsdb.html"><abbr title="Models/UserPermissionsDb.php">UserPermissionsDb.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">303</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Verify that this user&#039;s role is highest priority.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">checkPermissionVerifyRoleHighestPriority</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identity</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$Cache</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cacheExpire</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$cacheKeyRolesData</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p>This method's visibility must be <code class="prettyprint">protected</code> to let extended class use it.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$identity</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The identity.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$Cache</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The cache object.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$cacheExpire</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The cache expiration TTL.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$cacheKeyRolesData</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Cache key of roles data. This parameter will be altered for later usage.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_checkPermissionVerifyRoleHighestPriority#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">1.2.10</span>
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Rdb\Modules\KPApartment\Models\UserPermissionsDb::checkPermissionPerBuilding()">UserPermissionsDb::checkPermissionPerBuilding()</abbr></span>
+                                        
+                                                 <section class="phpdocumentor-description"><p>For reference.</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Return <code class="prettyprint">true</code> on success, <code class="prettyprint">false</code> for otherwise. If return <code class="prettyprint">false</code> it must be check with another process but if return <code class="prettyprint">true</code> then check permission process should be ended.</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCacheObject">
+        getCacheObject()
+        <a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_getCacheObject" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Models/UserPermissionsDb.php"><a href="files/models-userpermissionsdb.html"><abbr title="Models/UserPermissionsDb.php">UserPermissionsDb.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">483</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get cache object.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getCacheObject</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p>This method's visibility must be <code class="prettyprint">protected</code> to let extended class use it.</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_getCacheObject#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">1.2.10</span>
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr></span>
             </section>
 
 </article>
@@ -886,6 +1172,9 @@ Following keys must use together.<br>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_deleteCheckPermissionCache">deleteCheckPermissionCache()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_get">get()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_listItems">listItems()</a></li>
+                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_checkPermissionVerifyIdentity">checkPermissionVerifyIdentity()</a></li>
+                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_checkPermissionVerifyRoleHighestPriority">checkPermissionVerifyRoleHighestPriority()</a></li>
+                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_getCacheObject">getCacheObject()</a></li>
                                     </ul>
             </li>
                     </ul>

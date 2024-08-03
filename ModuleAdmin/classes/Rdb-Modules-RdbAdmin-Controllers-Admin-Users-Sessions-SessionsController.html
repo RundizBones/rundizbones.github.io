@@ -406,13 +406,6 @@
 <dd>Set JS assets and its object for XHR common data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-AdminBaseController.html#method_checkLoginFromContainer">checkLoginFromContainer()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>Check login from container to reduce call to DB.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Rdb-Modules-RdbAdmin-Controllers-BaseController.html#method_isModuleExcute">isModuleExcute()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -908,7 +901,7 @@ This method was called from <code class="prettyprint">doAddAction()</code> metho
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Controllers/Admin/AdminBaseController.php"><a href="files/controllers-admin-adminbasecontroller.html"><abbr title="Controllers/Admin/AdminBaseController.php">AdminBaseController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -1398,7 +1391,7 @@ Set to <code class="prettyprint">false</code> to automatic get the site name fro
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Controllers/Admin/AdminBaseController.php"><a href="files/controllers-admin-adminbasecontroller.html"><abbr title="Controllers/Admin/AdminBaseController.php">AdminBaseController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">218</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -2066,50 +2059,6 @@ This method was called from <code class="prettyprint">LoginController-&gt;doLogi
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_checkLoginFromContainer">
-        checkLoginFromContainer()
-        <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-AdminBaseController.html#method_checkLoginFromContainer" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Controllers/Admin/AdminBaseController.php"><a href="files/controllers-admin-adminbasecontroller.html"><abbr title="Controllers/Admin/AdminBaseController.php">AdminBaseController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">124</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Check login from container to reduce call to DB.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">checkLoginFromContainer</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-        <section class="phpdocumentor-description"><p>The check data in container must not older than N seconds.<br>
-This data in container will be create on every HTTP request but this admin base controller can be called multiple times per request.<br>
-It is depend on how other classes called to another controllers.</p>
-</section>
-
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>Return <code class="prettyprint">true</code> if logged in not over than N seconds. Return <code class="prettyprint">false</code> for otherwise.</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_isModuleExcute">
         isModuleExcute()
         <a href="classes/Rdb-Modules-RdbAdmin-Controllers-BaseController.html#method_isModuleExcute" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2175,7 +2124,7 @@ It is depend on how other classes called to another controllers.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Controllers/Admin/Users/Sessions/Traits/SessionsTrait.php"><a href="files/controllers-admin-users-sessions-traits-sessionstrait.html"><abbr title="Controllers/Admin/Users/Sessions/Traits/SessionsTrait.php">SessionsTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">334</span>
+    <span class="phpdocumentor-element-found-in__line">336</span>
 
     </aside>
 
@@ -2187,7 +2136,9 @@ It is depend on how other classes called to another controllers.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
-    
+        <section class="phpdocumentor-description"><p>The check data in container must not older than N seconds.</p>
+</section>
+
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -2419,7 +2370,6 @@ Second index is result of &quot;is logged in&quot;. This value can be <code clas
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-UI-Traits-CommonDataTrait.html#method_setCssAssets">setCssAssets()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-BaseController.html#method_setHeaderAllowOrigin">setHeaderAllowOrigin()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-UI-Traits-CommonDataTrait.html#method_setJsAssetsAndObject">setJsAssetsAndObject()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-AdminBaseController.html#method_checkLoginFromContainer">checkLoginFromContainer()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-BaseController.html#method_isModuleExcute">isModuleExcute()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Sessions-Traits-SessionsTrait.html#method_sessionsTraitCheckIsLoggedInFromContainer">sessionsTraitCheckIsLoggedInFromContainer()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Sessions-Traits-SessionsTrait.html#method_sessionTraitLogoutPreviousSessions">sessionTraitLogoutPreviousSessions()</a></li>

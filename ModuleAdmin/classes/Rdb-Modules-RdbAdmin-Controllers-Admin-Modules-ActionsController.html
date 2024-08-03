@@ -224,11 +224,11 @@
 <dd>{@inheritDoc}</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doUpdateAction">doUpdateAction()</a>
+    <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doActionsAction">doActionsAction()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Do update action on selected modules.</dd>
+<dd>Doing a selected action on selected modules.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-AdminBaseController.html#method_checkLogin">checkLogin()</a>
@@ -342,19 +342,12 @@
 </dt>
 <dd>Set JS assets and its object for XHR common data.</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_validateActions">validateActions()</a>
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doUpdateModule">doUpdateModule()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Validate form actions.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-AdminBaseController.html#method_checkLoginFromContainer">checkLoginFromContainer()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>Check login from container to reduce call to DB.</dd>
+<dd>Do update the module.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Rdb-Modules-RdbAdmin-Controllers-BaseController.html#method_isModuleExcute">isModuleExcute()</a>
@@ -376,6 +369,13 @@
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Logout all sessions before latest succeeded login. (logout only succeeded login).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_validateActions">validateActions()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Validate form actions.</dd>
 
     </dl>
 
@@ -623,29 +623,46 @@ This property will be set by <code class="prettyprint">maybeRunCron()</code> met
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_doUpdateAction">
-        doUpdateAction()
-        <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doUpdateAction" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_doActionsAction">
+        doActionsAction()
+        <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doActionsAction" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Controllers/Admin/Modules/ActionsController.php"><a href="files/controllers-admin-modules-actionscontroller.html"><abbr title="Controllers/Admin/Modules/ActionsController.php">ActionsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Do update action on selected modules.</p>
+        <p class="phpdocumentor-summary">Doing a selected action on selected modules.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">doUpdateAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">doActionsAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doActionsAction#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">1.2.5</span>
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>It was <code class="prettyprint">doUpdateAction()</code>, renamed to <code class="prettyprint">doActionsAction()</code>.</p>
+</section>
+
+                                    </dd>
+                                            </dl>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -699,7 +716,7 @@ This property will be set by <code class="prettyprint">maybeRunCron()</code> met
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Controllers/Admin/AdminBaseController.php"><a href="files/controllers-admin-adminbasecontroller.html"><abbr title="Controllers/Admin/AdminBaseController.php">AdminBaseController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -1025,7 +1042,7 @@ Set to <code class="prettyprint">false</code> to automatic get the site name fro
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Controllers/Admin/AdminBaseController.php"><a href="files/controllers-admin-adminbasecontroller.html"><abbr title="Controllers/Admin/AdminBaseController.php">AdminBaseController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">218</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -1479,130 +1496,79 @@ This method was called from <code class="prettyprint">LoginController-&gt;doLogi
                     <article
         class="phpdocumentor-element
             -method
-            -protected
+            -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_validateActions">
-        validateActions()
-        <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_validateActions" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_doUpdateModule">
+        doUpdateModule()
+        <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doUpdateModule" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Controllers/Admin/Modules/ActionsController.php"><a href="files/controllers-admin-modules-actionscontroller.html"><abbr title="Controllers/Admin/Modules/ActionsController.php">ActionsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Validate form actions.</p>
+        <p class="phpdocumentor-summary">Do update the module.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">validateActions</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$module_ids</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$modulesystemnames</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$currentModule</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">doUpdateModule</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mname</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
-        <section class="phpdocumentor-description"><p>This method was called from <code class="prettyprint">doUpdateAction()</code> method.</p>
+        <section class="phpdocumentor-description"><p>This will run module update command and <code class="prettyprint">Installer-&gt;update()</code> of selected module will be execute.<br>
+It is the same as running via command line <code class="prettyprint">php rdb system:module update --mname=xxx</code> (where xxx is Module folder name).</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$module_ids</span>
+                <span class="phpdocumentor-signature__argument__name">$mname</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The selected module IDs as string (from the form).</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$modulesystemnames</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The selected module system names as string (from the from).</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$currentModule</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Current module folder name (usually RdbAdmin).</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$action</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The selected action.</p>
+                    <section class="phpdocumentor-description"><p>Module system name to be run with update command.</p>
 </section>
 
             </dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doUpdateModule#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">1.2.10</span>
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>\Rdb\System\Core\Console\Module:executeUpdate()</p>
+</section>
+
+                                    </dd>
+                                            </dl>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
                     &mdash;
-                <section class="phpdocumentor-description"><p>Return associative array with keys:<br>
-<code class="prettyprint">action</code> The selected action.<br>
-<code class="prettyprint">module_ids</code> The selected module IDs.<br>
-<code class="prettyprint">formResultStatus</code> (optional) If contain any error, it also send out HTTP response code.<br>
-<code class="prettyprint">formResultMessage</code> (optional) If contain any error, it also send out HTTP response code.<br>
-<code class="prettyprint">moduleIdsArray</code> The module ids in array.<br>
-<code class="prettyprint">moduleSystemNameArray</code> The module system names in array.<br>
-<code class="prettyprint">actionsFormOk</code> The boolean value of form validation. It will be <code class="prettyprint">true</code> if form validation passed, and will be <code class="prettyprint">false</code> if it is not.</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkLoginFromContainer">
-        checkLoginFromContainer()
-        <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-AdminBaseController.html#method_checkLoginFromContainer" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Controllers/Admin/AdminBaseController.php"><a href="files/controllers-admin-adminbasecontroller.html"><abbr title="Controllers/Admin/AdminBaseController.php">AdminBaseController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">124</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Check login from container to reduce call to DB.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">checkLoginFromContainer</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-        <section class="phpdocumentor-description"><p>The check data in container must not older than N seconds.<br>
-This data in container will be create on every HTTP request but this admin base controller can be called multiple times per request.<br>
-It is depend on how other classes called to another controllers.</p>
-</section>
-
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>Return <code class="prettyprint">true</code> if logged in not over than N seconds. Return <code class="prettyprint">false</code> for otherwise.</p>
+                <section class="phpdocumentor-description"><p>Return associative array:<br>
+<code class="prettyprint">formResultStatus</code> (string) The form result error status. This key exists only when there is an error.<br>
+<code class="prettyprint">formResultMessage</code> (string) The error message. This key exists only when there is an error.<br></p>
 </section>
 
             </section>
@@ -1679,7 +1645,7 @@ It is depend on how other classes called to another controllers.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Controllers/Admin/Users/Sessions/Traits/SessionsTrait.php"><a href="files/controllers-admin-users-sessions-traits-sessionstrait.html"><abbr title="Controllers/Admin/Users/Sessions/Traits/SessionsTrait.php">SessionsTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">334</span>
+    <span class="phpdocumentor-element-found-in__line">336</span>
 
     </aside>
 
@@ -1691,7 +1657,9 @@ It is depend on how other classes called to another controllers.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
-    
+        <section class="phpdocumentor-description"><p>The check data in container must not older than N seconds.</p>
+</section>
+
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1771,6 +1739,95 @@ Second index is result of &quot;is logged in&quot;. This value can be <code clas
     
 
     
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_validateActions">
+        validateActions()
+        <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_validateActions" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Controllers/Admin/Modules/ActionsController.php"><a href="files/controllers-admin-modules-actionscontroller.html"><abbr title="Controllers/Admin/Modules/ActionsController.php">ActionsController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">319</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Validate form actions.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">validateActions</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$module_ids</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$modulesystemnames</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$currentModule</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p>This method was called from <code class="prettyprint">doActionsAction()</code> method.</p>
+<p>This method will be send out HTTP status if failed to validate.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$module_ids</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The selected module IDs as string (from the form).</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$modulesystemnames</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The selected module system names as string (from the from).</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$currentModule</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Current module folder name (usually RdbAdmin).</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$action</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The selected action.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Return associative array with keys:<br>
+<code class="prettyprint">action</code> The selected action.<br>
+<code class="prettyprint">module_ids</code> The selected module IDs.<br>
+<code class="prettyprint">formResultStatus</code> (optional) If contain any error, it also send out HTTP response code.<br>
+<code class="prettyprint">formResultMessage</code> (optional) If contain any error, it also send out HTTP response code.<br>
+<code class="prettyprint">moduleIdsArray</code> The module ids in array.<br>
+<code class="prettyprint">moduleSystemNameArray</code> The module system names in array.<br>
+<code class="prettyprint">actionsFormOk</code> The boolean value of form validation. It will be <code class="prettyprint">true</code> if form validation passed, and will be <code class="prettyprint">false</code> if it is not.</p>
+</section>
+
+            </section>
+
 </article>
             </section>
 
@@ -1897,7 +1954,7 @@ Second index is result of &quot;is logged in&quot;. This value can be <code clas
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-BaseController.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doUpdateAction">doUpdateAction()</a></li>
+                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doActionsAction">doActionsAction()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-AdminBaseController.html#method_checkLogin">checkLogin()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-AdminBaseController.html#method_checkPermission">checkPermission()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-UI-Traits-CommonDataTrait.html#method_getConfigDb">getConfigDb()</a></li>
@@ -1914,11 +1971,11 @@ Second index is result of &quot;is logged in&quot;. This value can be <code clas
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-UI-Traits-CommonDataTrait.html#method_setCssAssets">setCssAssets()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-BaseController.html#method_setHeaderAllowOrigin">setHeaderAllowOrigin()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-UI-Traits-CommonDataTrait.html#method_setJsAssetsAndObject">setJsAssetsAndObject()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_validateActions">validateActions()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-AdminBaseController.html#method_checkLoginFromContainer">checkLoginFromContainer()</a></li>
+                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doUpdateModule">doUpdateModule()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-BaseController.html#method_isModuleExcute">isModuleExcute()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Sessions-Traits-SessionsTrait.html#method_sessionsTraitCheckIsLoggedInFromContainer">sessionsTraitCheckIsLoggedInFromContainer()</a></li>
                                             <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Sessions-Traits-SessionsTrait.html#method_sessionTraitLogoutPreviousSessions">sessionTraitLogoutPreviousSessions()</a></li>
+                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_validateActions">validateActions()</a></li>
                                     </ul>
             </li>
                     </ul>

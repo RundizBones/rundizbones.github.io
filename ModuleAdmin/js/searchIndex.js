@@ -341,11 +341,6 @@ Search.appendIndex(
             "summary": "Check\u0020for\u0020logged\u0020in,\u0020if\u0020not\u0020then\u0020redirect\u0020to\u0020login\u0020page.",
             "url": "classes/Rdb-Modules-RdbAdmin-Controllers-Admin-AdminBaseController.html#method_checkLogin"
         },                {
-            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Controllers\\Admin\\AdminBaseController\u003A\u003AcheckLoginFromContainer\u0028\u0029",
-            "name": "checkLoginFromContainer",
-            "summary": "Check\u0020login\u0020from\u0020container\u0020to\u0020reduce\u0020call\u0020to\u0020DB.",
-            "url": "classes/Rdb-Modules-RdbAdmin-Controllers-Admin-AdminBaseController.html#method_checkLoginFromContainer"
-        },                {
             "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Controllers\\Admin\\AdminBaseController\u003A\u003AcheckPermission\u0028\u0029",
             "name": "checkPermission",
             "summary": "Check\u0020permission\u0020and\u0020\u0028redirect\u0020OR\u0020response\u0020error\u0020message\u0029.",
@@ -531,10 +526,15 @@ Search.appendIndex(
             "summary": "Modules\u0020actions\u0020controller.",
             "url": "classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html"
         },                {
-            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Controllers\\Admin\\Modules\\ActionsController\u003A\u003AdoUpdateAction\u0028\u0029",
-            "name": "doUpdateAction",
-            "summary": "Do\u0020update\u0020action\u0020on\u0020selected\u0020modules.",
-            "url": "classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doUpdateAction"
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Controllers\\Admin\\Modules\\ActionsController\u003A\u003AdoActionsAction\u0028\u0029",
+            "name": "doActionsAction",
+            "summary": "Doing\u0020a\u0020selected\u0020action\u0020on\u0020selected\u0020modules.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doActionsAction"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Controllers\\Admin\\Modules\\ActionsController\u003A\u003AdoUpdateModule\u0028\u0029",
+            "name": "doUpdateModule",
+            "summary": "Do\u0020update\u0020the\u0020module.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Modules-ActionsController.html#method_doUpdateModule"
         },                {
             "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Controllers\\Admin\\Modules\\ActionsController\u003A\u003AvalidateActions\u0028\u0029",
             "name": "validateActions",
@@ -2676,6 +2676,16 @@ Search.appendIndex(
             "summary": "String\u0020class.\u0020\u0028String\u0020class\u0020name\u0020is\u0020reserved,\u0020see\u0020https\u003A\/\/www.php.net\/manual\/en\/reserved.other\u002Dreserved\u002Dwords.php\u0020for\u0020more\u0020details.\u0029",
             "url": "classes/Rdb-Modules-RdbAdmin-Libraries-RdbaString.html"
         },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\RdbaString\u003A\u003A__callStatic\u0028\u0029",
+            "name": "__callStatic",
+            "summary": "For\u0020static\u0020methods\u0020on\u0020non\u002Dstatic\u0020methods.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-RdbaString.html#method___callStatic"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\RdbaString\u003A\u003AfilterSanitizeString\u0028\u0029",
+            "name": "filterSanitizeString",
+            "summary": "Strip\u0020HTML\u0020tags\u0020and\u0020then\u0020do\u0020the\u0020\u0060htmlspecialchars\u0028\u0029\u0060\u0020with\u0020single\u0020quotes.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-RdbaString.html#method_filterSanitizeString"
+        },                {
             "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\RdbaString\u003A\u003Arandom\u0028\u0029",
             "name": "random",
             "summary": "Generate\u0020random\u0020string.",
@@ -3226,6 +3236,16 @@ Search.appendIndex(
             "summary": "Check\u0020permission\u0020for\u0020role,\u0020user.",
             "url": "classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_checkPermission"
         },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Models\\UserPermissionsDb\u003A\u003AcheckPermissionVerifyIdentity\u0028\u0029",
+            "name": "checkPermissionVerifyIdentity",
+            "summary": "Verify\u0020and\u0020get\u0020identities.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_checkPermissionVerifyIdentity"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Models\\UserPermissionsDb\u003A\u003AcheckPermissionVerifyRoleHighestPriority\u0028\u0029",
+            "name": "checkPermissionVerifyRoleHighestPriority",
+            "summary": "Verify\u0020that\u0020this\u0020user\u0027s\u0020role\u0020is\u0020highest\u0020priority.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_checkPermissionVerifyRoleHighestPriority"
+        },                {
             "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Models\\UserPermissionsDb\u003A\u003Adelete\u0028\u0029",
             "name": "delete",
             "summary": "Delete\u0020permission.",
@@ -3240,6 +3260,11 @@ Search.appendIndex(
             "name": "get",
             "summary": "Get\u0020a\u0020permission\u0020data.",
             "url": "classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_get"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Models\\UserPermissionsDb\u003A\u003AgetCacheObject\u0028\u0029",
+            "name": "getCacheObject",
+            "summary": "Get\u0020cache\u0020object.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Models-UserPermissionsDb.html#method_getCacheObject"
         },                {
             "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Models\\UserPermissionsDb\u003A\u003AlistItems\u0028\u0029",
             "name": "listItems",
