@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/rdb.html" class="">Rdb</a>
@@ -67,7 +67,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -79,14 +79,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -131,6 +131,7 @@
 
 
 
+
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Rdb-System-Libraries-ArrayUtil.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -146,6 +147,8 @@
                                              
                                     </dd>
                                             </dl>
+
+
 
 
 
@@ -171,49 +174,48 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Libraries-ArrayUtil.html#method___callStatic">__callStatic()</a>
+    <a class="" href="classes/Rdb-System-Libraries-ArrayUtil.html#method___callStatic">__callStatic()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Call static magic method.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_arrayCustomMerge">arrayCustomMerge()</a>
+    <a class="" href="classes/Rdb-System-Libraries-ArrayUtil.html#method_arrayCustomMerge">arrayCustomMerge()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Array custom merge. Preserve indexed array key (numbers) but overwrite string key (same as PHP&#039;s `array_merge()` function).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_inArrayI">inArrayI()</a>
+    <a class="" href="classes/Rdb-System-Libraries-ArrayUtil.html#method_inArrayI">inArrayI()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Checks if a value exists in an array (case insensitive).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_isAssoc">isAssoc()</a>
+    <a class="" href="classes/Rdb-System-Libraries-ArrayUtil.html#method_isAssoc">isAssoc()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Check if associative array or indexed array?</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_recursiveKsort">recursiveKsort()</a>
+    <a class="" href="classes/Rdb-System-Libraries-ArrayUtil.html#method_recursiveKsort">recursiveKsort()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Recursive sort array key.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_staticRecursiveKsort">staticRecursiveKsort()</a>
+    <a class="" href="classes/Rdb-System-Libraries-ArrayUtil.html#method_staticRecursiveKsort">staticRecursiveKsort()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Static version of `recursiveKsort()`.</dd>
 
     </dl>
-
 
 
 
@@ -254,6 +256,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -271,6 +274,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -302,6 +307,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>If the another array key is string, it will be overwrite the first array.<br>
 If the another array key is integer, it will be add to first array depend on duplicated key or not.
 If it is not duplicate key with the first, the key will be preserve and add to the first array.
@@ -347,6 +353,8 @@ If it is duplicated then it will be re-index the number append to the first arra
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
@@ -383,6 +391,7 @@ If it is duplicated then it will be re-index the number append to the first arra
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -431,6 +440,8 @@ If it is duplicated then it will be re-index the number append to the first arra
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -467,6 +478,7 @@ If it is duplicated then it will be re-index the number append to the first arra
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -522,6 +534,8 @@ If it is duplicated then it will be re-index the number append to the first arra
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -558,6 +572,7 @@ If it is duplicated then it will be re-index the number append to the first arra
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -615,6 +630,8 @@ If it is duplicated then it will be re-index the number append to the first arra
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -642,6 +659,7 @@ If it is duplicated then it will be re-index the number append to the first arra
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>The method <code class="prettyprint">recursiveKsort()</code> can't call using magic call static because it is required to call itself using <code class="prettyprint">$this</code>.<br>
 This static version will initialize the class with <code class="prettyprint">new self()</code>.</p>
 </section>
@@ -682,6 +700,8 @@ This static version will initialize the class with <code class="prettyprint">new
 
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -798,12 +818,12 @@ This static version will initialize the class with <code class="prettyprint">new
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Rdb-System-Libraries-ArrayUtil.html#method___callStatic">__callStatic()</a></li>
-                                            <li><a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_arrayCustomMerge">arrayCustomMerge()</a></li>
-                                            <li><a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_inArrayI">inArrayI()</a></li>
-                                            <li><a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_isAssoc">isAssoc()</a></li>
-                                            <li><a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_recursiveKsort">recursiveKsort()</a></li>
-                                            <li><a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_staticRecursiveKsort">staticRecursiveKsort()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Libraries-ArrayUtil.html#method___callStatic">__callStatic()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_arrayCustomMerge">arrayCustomMerge()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_inArrayI">inArrayI()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_isAssoc">isAssoc()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_recursiveKsort">recursiveKsort()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Libraries-ArrayUtil.html#method_staticRecursiveKsort">staticRecursiveKsort()</a></li>
                                     </ul>
             </li>
                     </ul>

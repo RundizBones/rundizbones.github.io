@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/rdb.html" class="">Rdb</a>
@@ -67,7 +67,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -79,14 +79,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -123,6 +123,7 @@
 
 
 
+
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -137,7 +138,9 @@
                                                                                 
                                              
                                     </dd>
-                                            </dl>
+                                                                </dl>
+
+
 
 
 
@@ -163,35 +166,35 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method___construct">__construct()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Class constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_disable">disable()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_disable">disable()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>When plugin is disabled, this method will be called.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_enable">enable()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_enable">enable()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>When plugin is enabled, this method will be called.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_registerHooks">registerHooks()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_registerHooks">registerHooks()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Register action and/or filter hooks.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_uninstall">uninstall()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_uninstall">uninstall()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -236,6 +239,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Set the container to protected property for easy access from the other part in the plugin class.<br>
 Example:<pre class="prettyprint">
 $this-&gt;Container = $Container;
@@ -254,6 +258,8 @@ $this-&gt;Container = $Container;
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -285,10 +291,13 @@ $this-&gt;Container = $Container;
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Do not echo out in this method or it will not functional.</p>
 </section>
 
     
+    
+
     
 
     
@@ -319,10 +328,13 @@ $this-&gt;Container = $Container;
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Do not echo out in this method or it will not functional.</p>
 </section>
 
     
+    
+
     
 
     
@@ -353,6 +365,7 @@ $this-&gt;Container = $Container;
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Example:<pre class="prettyprint">
 $Plugins = $this-&gt;Container-&gt;get('Plugins');
 $YourClass = new \Rdb\Modules\YourModule\Plugins\YourPlugin\YourPluginClass();
@@ -361,6 +374,8 @@ $Plugins-&gt;addHook('hook.name', [$YourClass, 'yourActionHook'], 10);
 </section>
 
     
+    
+
     
 
     
@@ -391,10 +406,13 @@ $Plugins-&gt;addHook('hook.name', [$YourClass, 'yourActionHook'], 10);
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Do not echo out in this method or it will not functional.</p>
 </section>
 
     
+    
+
     
 
     
@@ -511,11 +529,11 @@ $Plugins-&gt;addHook('hook.name', [$YourClass, 'yourActionHook'], 10);
                             <li class="phpdocumentor-on-this-page-section__title">Methods</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method___construct">__construct()</a></li>
-                                                    <li><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_disable">disable()</a></li>
-                                                    <li><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_enable">enable()</a></li>
-                                                    <li><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_registerHooks">registerHooks()</a></li>
-                                                    <li><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_uninstall">uninstall()</a></li>
+                                                    <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method___construct">__construct()</a></li>
+                                                    <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_disable">disable()</a></li>
+                                                    <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_enable">enable()</a></li>
+                                                    <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_registerHooks">registerHooks()</a></li>
+                                                    <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-Plugins.html#method_uninstall">uninstall()</a></li>
                                             </ul>
                 </li>
             

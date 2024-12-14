@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/rdb.html" class="">Rdb</a>
@@ -67,7 +67,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -79,14 +79,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -129,6 +129,7 @@
 
             <p class="phpdocumentor-summary">Error handler for the framework.</p>
 
+
     <section class="phpdocumentor-description"><p>These will be depend on configuration in <strong>config/[environment]/app.php</strong>.
 If the configuration 'log.enable' was not set to <code class="prettyprint">true</code> then it will be use <code class="prettyprint">error_log</code> on php.ini setting.
 If the configuration 'log.enable' was set to <code class="prettyprint">true</code> then it will be set PHP error log path to inside storage/logs.</p>
@@ -155,6 +156,8 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
 
 
 
+
+
 <h3 id="toc">
     Table of Contents
     <a href="classes/Rdb-System-Middleware-ErrorHandler.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -176,19 +179,19 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Rdb-System-Middleware-ErrorHandler.html#property_Config">$Config</a>
+    <a class="" href="classes/Rdb-System-Middleware-ErrorHandler.html#property_Config">$Config</a>
     <span>
                         &nbsp;: <a href="classes/Rdb-System-Config.html"><abbr title="\Rdb\System\Config">Config</abbr></a>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Rdb-System-Middleware-ErrorHandler.html#property_Container">$Container</a>
+    <a class="" href="classes/Rdb-System-Middleware-ErrorHandler.html#property_Container">$Container</a>
     <span>
                         &nbsp;: <a href="classes/Rdb-System-Container.html"><abbr title="\Rdb\System\Container">Container</abbr></a>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Rdb-System-Middleware-ErrorHandler.html#property_donotLogLevel">$donotLogLevel</a>
+    <a class="" href="classes/Rdb-System-Middleware-ErrorHandler.html#property_donotLogLevel">$donotLogLevel</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
@@ -202,28 +205,27 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Middleware-ErrorHandler.html#method___construct">__construct()</a>
+    <a class="" href="classes/Rdb-System-Middleware-ErrorHandler.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>The class constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Middleware-ErrorHandler.html#method_changeLogErrorsIniSetting">changeLogErrorsIniSetting()</a>
+    <a class="" href="classes/Rdb-System-Middleware-ErrorHandler.html#method_changeLogErrorsIniSetting">changeLogErrorsIniSetting()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Change `log_errors` in the php.ini depend on `log.donotLogLevel` in config/[environment]/app.php file.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Middleware-ErrorHandler.html#method_init">init()</a>
+    <a class="" href="classes/Rdb-System-Middleware-ErrorHandler.html#method_init">init()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 <dd>Initialize the error handler.</dd>
 
     </dl>
-
 
 
 
@@ -258,6 +260,7 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Rdb-System-Config.html"><abbr title="\Rdb\System\Config">Config</abbr></a></span>
@@ -266,6 +269,8 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
 
     
     
+    
+
     
 
 </article>
@@ -291,6 +296,7 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Rdb-System-Container.html"><abbr title="\Rdb\System\Container">Container</abbr></a></span>
@@ -299,6 +305,8 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
 
     
     
+    
+
     
 
 </article>
@@ -324,6 +332,7 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int</span>
@@ -333,6 +342,8 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
     
         <section class="phpdocumentor-description"><p>Do not log when log level is UNDER selected. (read more in config/default/app.php.)</p>
 </section>
+
+    
 
     
 
@@ -372,6 +383,7 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -384,6 +396,8 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -415,6 +429,7 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -473,6 +488,8 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -497,7 +514,7 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="System/Middleware/ErrorHandler.php"><a href="files/system-middleware-errorhandler.html"><abbr title="System/Middleware/ErrorHandler.php">ErrorHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
@@ -509,6 +526,7 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Please read the class doc block.</p>
 </section>
 
@@ -522,6 +540,8 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -644,18 +664,18 @@ If the configuration 'log.donotLogLevel' was not set then it will be use <code c
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Rdb-System-Middleware-ErrorHandler.html#property_Config">$Config<a href="classes/Rdb-System-Middleware-ErrorHandler.html"></li>
-                                                    <li><a href="classes/Rdb-System-Middleware-ErrorHandler.html#property_Container">$Container<a href="classes/Rdb-System-Middleware-ErrorHandler.html"></li>
-                                                    <li><a href="classes/Rdb-System-Middleware-ErrorHandler.html#property_donotLogLevel">$donotLogLevel<a href="classes/Rdb-System-Middleware-ErrorHandler.html"></li>
+                                                    <li class=""><a href="classes/Rdb-System-Middleware-ErrorHandler.html#property_Config">$Config</a></li>
+                                                    <li class=""><a href="classes/Rdb-System-Middleware-ErrorHandler.html#property_Container">$Container</a></li>
+                                                    <li class=""><a href="classes/Rdb-System-Middleware-ErrorHandler.html#property_donotLogLevel">$donotLogLevel</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Rdb-System-Middleware-ErrorHandler.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Rdb-System-Middleware-ErrorHandler.html#method_changeLogErrorsIniSetting">changeLogErrorsIniSetting()</a></li>
-                                            <li><a href="classes/Rdb-System-Middleware-ErrorHandler.html#method_init">init()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Middleware-ErrorHandler.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Middleware-ErrorHandler.html#method_changeLogErrorsIniSetting">changeLogErrorsIniSetting()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Middleware-ErrorHandler.html#method_init">init()</a></li>
                                     </ul>
             </li>
                     </ul>

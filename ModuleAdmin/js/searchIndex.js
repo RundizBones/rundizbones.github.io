@@ -1638,7 +1638,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Rdb\\Modules\\RdbAdmin\\CronJobs\\OnceADayJobs\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
-            "summary": "\u007B\u0040inheritDoc\u007D",
+            "summary": "Execute\u0020a\u0020cron\u0020job.",
             "url": "classes/Rdb-Modules-RdbAdmin-CronJobs-OnceADayJobs.html#method_execute"
         },                {
             "fqsen": "\\rdbaGetDatetime\u0028\u0029",
@@ -2390,6 +2390,121 @@ Search.appendIndex(
             "name": "memcachePrefix",
             "summary": "",
             "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-Memcached.html#property_memcachePrefix"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Apcu",
+            "name": "Apcu",
+            "summary": "Extended\u0020Rundiz\\SimpleCache\\Drivers\\Apcu\u0020class.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Apcu.html"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Apcu\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Class\u0020constructor",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Apcu.html#method___construct"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Apcu\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Apcu.html#method_delete"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Apcu\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Apcu.html#method_get"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Apcu\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Apcu.html#method_has"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Apcu\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Apcu.html#method_set"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Apcu\u003A\u003A\u0024apcuPrefix",
+            "name": "apcuPrefix",
+            "summary": "",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Apcu.html#property_apcuPrefix"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcache",
+            "name": "Memcache",
+            "summary": "Extended\u0020Rundiz\\SimpleCache\\Drivers\\Memcache\u0020class.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcache.html"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcache\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Class\u0020constructor",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcache.html#method___construct"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcache\u003A\u003AtrimLongKey\u0028\u0029",
+            "name": "trimLongKey",
+            "summary": "Trim\u0020out\u0020long\u0020cache\u0020key\u0020from\u0020the\u0020beginning\u0020if\u0020it\u0020is\u0020too\u0020longer\u0020than\u0020Memcache\u0020can\u0020accept\u0020\u0028250\u0029.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcache.html#method_trimLongKey"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcache\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcache.html#method_delete"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcache\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcache.html#method_get"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcache\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcache.html#method_has"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcache\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcache.html#method_set"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcache\u003A\u003A\u0024memcachePrefix",
+            "name": "memcachePrefix",
+            "summary": "",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcache.html#property_memcachePrefix"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcached",
+            "name": "Memcached",
+            "summary": "Extended\u0020Rundiz\\SimpleCache\\Drivers\\Memcached\u0020class.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcached.html"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcached\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Class\u0020constructor",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcached.html#method___construct"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcached\u003A\u003AtrimLongKey\u0028\u0029",
+            "name": "trimLongKey",
+            "summary": "Trim\u0020out\u0020long\u0020cache\u0020key\u0020from\u0020the\u0020beginning\u0020if\u0020it\u0020is\u0020too\u0020longer\u0020than\u0020Memcached\u0020can\u0020accept\u0020\u0028250\u0029.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcached.html#method_trimLongKey"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcached\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcached.html#method_delete"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcached\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcached.html#method_get"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcached\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcached.html#method_has"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcached\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcached.html#method_set"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80\\Memcached\u003A\u003A\u0024memcachePrefix",
+            "name": "memcachePrefix",
+            "summary": "",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Extended-RundizSimpleCache-PHP80-Memcached.html#property_memcachePrefix"
         },                {
             "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\SlimGuard",
             "name": "SlimGuard",
@@ -3700,6 +3815,11 @@ Search.appendIndex(
             "name": "RundizSimpleCache",
             "summary": "",
             "url": "namespaces/rdb-modules-rdbadmin-libraries-extended-rundizsimplecache.html"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended\\RundizSimpleCache\\PHP80",
+            "name": "PHP80",
+            "summary": "",
+            "url": "namespaces/rdb-modules-rdbadmin-libraries-extended-rundizsimplecache-php80.html"
         },                {
             "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Extended",
             "name": "Extended",

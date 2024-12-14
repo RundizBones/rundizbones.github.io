@@ -321,11 +321,6 @@ Search.appendIndex(
             "summary": "Update\u0020a\u0020module.",
             "url": "classes/Rdb-System-Core-Console-Module.html#method_executeUpdate"
         },                {
-            "fqsen": "\\Rdb\\System\\Core\\Console\\Module\u003A\u003AgetComposerDefault\u0028\u0029",
-            "name": "getComposerDefault",
-            "summary": "Get\u0020default\u0020composer\u0020json\u0020file.",
-            "url": "classes/Rdb-System-Core-Console-Module.html#method_getComposerDefault"
-        },                {
             "fqsen": "\\Rdb\\System\\Core\\Console\\Module\u003A\u003AisTargetFileFolderWritable\u0028\u0029",
             "name": "isTargetFileFolderWritable",
             "summary": "Check\u0020if\u0020target\u0020file\u0020and\u0020folder\u0020is\u0020writable.",
@@ -1290,6 +1285,11 @@ Search.appendIndex(
             "name": "exists",
             "summary": "Check\u0020if\u0020module\u0020exists.",
             "url": "classes/Rdb-System-Modules.html#method_exists"
+        },                {
+            "fqsen": "\\Rdb\\System\\Modules\u003A\u003AgetComposerDefault\u0028\u0029",
+            "name": "getComposerDefault",
+            "summary": "Get\u0020default\u0020composer\u0020json\u0020file.",
+            "url": "classes/Rdb-System-Modules.html#method_getComposerDefault"
         },                {
             "fqsen": "\\Rdb\\System\\Modules\u003A\u003AgetCurrentModule\u0028\u0029",
             "name": "getCurrentModule",

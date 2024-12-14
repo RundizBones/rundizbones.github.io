@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/rdb.html" class="">Rdb</a>
@@ -67,7 +67,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -79,14 +79,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -101,6 +101,7 @@
         <h2 class="phpdocumentor-content__title">HTMLFunctions.php</h2>
 
             <p class="phpdocumentor-summary">HTML functions.</p>
+
 
     <section class="phpdocumentor-description"><p>To use these functions, you must include/require it.</p>
 </section>
@@ -122,6 +123,8 @@
 
                                     </dd>
                         </dl>
+
+
 
 
 
@@ -148,28 +151,28 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -function -">
-    <a href="namespaces/default.html#function_rdbaGetDatetime">rdbaGetDatetime()</a>
+    <a class="" href="namespaces/default.html#function_rdbaGetDatetime">rdbaGetDatetime()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get date/time value from UTC date/time to specific time zone.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
-    <a href="namespaces/default.html#function_renderAlertHtml">renderAlertHtml()</a>
+    <a class="" href="namespaces/default.html#function_renderAlertHtml">renderAlertHtml()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Render RDTA alert box.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
-    <a href="namespaces/default.html#function_renderBreadcrumbHtml">renderBreadcrumbHtml()</a>
+    <a class="" href="namespaces/default.html#function_renderBreadcrumbHtml">renderBreadcrumbHtml()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Render breadcrumb list without `&lt;ul&gt;` and `&lt;/ul&gt;` due to it is already in **mainLayout_v.php** file.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
-    <a href="namespaces/default.html#function_renderFaviconHtml">renderFaviconHtml()</a>
+    <a class="" href="namespaces/default.html#function_renderFaviconHtml">renderFaviconHtml()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -202,6 +205,7 @@
 
         <p class="phpdocumentor-summary">Get date/time value from UTC date/time to specific time zone.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
                     <span class="phpdocumentor-signature__name">rdbaGetDatetime</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$gmtDatetime</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timezone</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;%e %B %Y %H:%M:%S %z&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
@@ -265,6 +269,7 @@
 
         <p class="phpdocumentor-summary">Render RDTA alert box.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
                     <span class="phpdocumentor-signature__name">renderAlertHtml</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$alertClass</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dismissable</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
@@ -328,6 +333,7 @@
 
         <p class="phpdocumentor-summary">Render breadcrumb list without `&lt;ul&gt;` and `&lt;/ul&gt;` due to it is already in **mainLayout_v.php** file.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
                     <span class="phpdocumentor-signature__name">renderBreadcrumbHtml</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$breadcrumb</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
@@ -371,6 +377,7 @@
 
         <p class="phpdocumentor-summary">Render favicon HTML.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
                     <span class="phpdocumentor-signature__name">renderFaviconHtml</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Rdb\System\Container">Container</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$Container</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$faviconPath</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
@@ -538,10 +545,10 @@
                             <li class="phpdocumentor-on-this-page-section__title">Functions</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="namespaces/default.html#function_rdbaGetDatetime">rdbaGetDatetime()</a></li>
-                                                    <li><a href="namespaces/default.html#function_renderAlertHtml">renderAlertHtml()</a></li>
-                                                    <li><a href="namespaces/default.html#function_renderBreadcrumbHtml">renderBreadcrumbHtml()</a></li>
-                                                    <li><a href="namespaces/default.html#function_renderFaviconHtml">renderFaviconHtml()</a></li>
+                                                    <li class=""><a href="namespaces/default.html#function_rdbaGetDatetime">rdbaGetDatetime()</a></li>
+                                                    <li class=""><a href="namespaces/default.html#function_renderAlertHtml">renderAlertHtml()</a></li>
+                                                    <li class=""><a href="namespaces/default.html#function_renderBreadcrumbHtml">renderBreadcrumbHtml()</a></li>
+                                                    <li class=""><a href="namespaces/default.html#function_renderFaviconHtml">renderFaviconHtml()</a></li>
                                             </ul>
                 </li>
                     </ul>

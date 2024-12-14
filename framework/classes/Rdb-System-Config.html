@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/rdb.html" class="">Rdb</a>
@@ -67,7 +67,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -79,14 +79,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -128,6 +128,7 @@
 
             <p class="phpdocumentor-summary">Load config files from /config folder from main application or modules in each environment that was set in the /public/index.php file.</p>
 
+
     <section class="phpdocumentor-description"><p>This class can load config file, get config value, set config name and value (but not write to the file).</p>
 </section>
 
@@ -147,6 +148,8 @@
                                              
                                     </dd>
                                             </dl>
+
+
 
 
 
@@ -171,19 +174,19 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Rdb-System-Config.html#property_traceLoadedFiles">$traceLoadedFiles</a>
+    <a class="" href="classes/Rdb-System-Config.html#property_traceLoadedFiles">$traceLoadedFiles</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Rdb-System-Config.html#property_loadedFiles">$loadedFiles</a>
+    <a class="" href="classes/Rdb-System-Config.html#property_loadedFiles">$loadedFiles</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Rdb-System-Config.html#property_moduleSystemName">$moduleSystemName</a>
+    <a class="" href="classes/Rdb-System-Config.html#property_moduleSystemName">$moduleSystemName</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
@@ -197,77 +200,76 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Config.html#method___construct">__construct()</a>
+    <a class="" href="classes/Rdb-System-Config.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Config class constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Config.html#method___get">__get()</a>
+    <a class="" href="classes/Rdb-System-Config.html#method___get">__get()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Magic get.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Config.html#method_get">get()</a>
+    <a class="" href="classes/Rdb-System-Config.html#method_get">get()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Get the config value from specified name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Config.html#method_getDefaultLanguage">getDefaultLanguage()</a>
+    <a class="" href="classes/Rdb-System-Config.html#method_getDefaultLanguage">getDefaultLanguage()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get default language.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Config.html#method_getFile">getFile()</a>
+    <a class="" href="classes/Rdb-System-Config.html#method_getFile">getFile()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get path to config file depend on environment and file that exists.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Config.html#method_getWithoutCache">getWithoutCache()</a>
+    <a class="" href="classes/Rdb-System-Config.html#method_getWithoutCache">getWithoutCache()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Get the config value from specified name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Config.html#method_load">load()</a>
+    <a class="" href="classes/Rdb-System-Config.html#method_load">load()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Load the config file into property array.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Config.html#method_set">set()</a>
+    <a class="" href="classes/Rdb-System-Config.html#method_set">set()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Set config name (key) and value to an existing config file.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-System-Config.html#method_setModule">setModule()</a>
+    <a class="" href="classes/Rdb-System-Config.html#method_setModule">setModule()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Set the module that this class will be get config from it.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Rdb-System-Config.html#method_isLoaded">isLoaded()</a>
+    <a class="" href="classes/Rdb-System-Config.html#method_isLoaded">isLoaded()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Check if config file was loaded. If config file was not loaded, load the config file.</dd>
 
     </dl>
-
 
 
 
@@ -302,6 +304,7 @@
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
@@ -311,6 +314,8 @@
     
         <section class="phpdocumentor-description"><p>Contain loaded files for use in debug.</p>
 </section>
+
+    
 
     
 
@@ -337,6 +342,7 @@
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
@@ -357,6 +363,8 @@ array(
 )
 </pre></p>
 </section>
+
+    
 
     
 
@@ -383,15 +391,18 @@ array(
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$moduleSystemName</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;system\\core&#039;</span></code>
+     = <span class="phpdocumentor-signature__default-value">&#039;system\core&#039;</span></code>
 
     
         <section class="phpdocumentor-description"><p>Module system name (folder name) that this class will get config.</p>
 </section>
+
+    
 
     
 
@@ -430,10 +441,13 @@ array(
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>You can load this class via framework's <code class="prettyprint">Container</code> object named <code class="prettyprint">Config</code>. Example: <code class="prettyprint">$Config = $Container-&gt;get('Config');</code>.</p>
 </section>
 
     
+    
+
     
 
     
@@ -465,6 +479,7 @@ array(
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -494,6 +509,8 @@ array(
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -521,6 +538,7 @@ array(
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>This method will get configuration that was temporary cached into property <code class="prettyprint">loadedFiles</code>.<br>
 The property <code class="prettyprint">loadedFiles</code> will be set while it is trying to load the config file via <code class="prettyprint">load()</code> method.</p>
 <p>This is depend on <code class="prettyprint">setModule()</code> method that telling it will get from main app or modules.</p>
@@ -556,6 +574,8 @@ The property <code class="prettyprint">loadedFiles</code> will be set while it i
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -596,6 +616,7 @@ The property <code class="prettyprint">loadedFiles</code> will be set while it i
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -608,6 +629,8 @@ The property <code class="prettyprint">loadedFiles</code> will be set while it i
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -647,6 +670,7 @@ The property <code class="prettyprint">loadedFiles</code> will be set while it i
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>This is depend on <code class="prettyprint">setModule()</code> method that telling it will get from main app or modules.</p>
 </section>
 
@@ -662,6 +686,8 @@ The property <code class="prettyprint">loadedFiles</code> will be set while it i
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -701,6 +727,7 @@ The property <code class="prettyprint">loadedFiles</code> will be set while it i
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>This method will get configuration directly from file in selected module or main app.<br>
 Unlike <code class="prettyprint">get()</code> method which will try to get config that was temporary cached into property <code class="prettyprint">loadedFiles</code>.</p>
 <p>This is depend on <code class="prettyprint">setModule()</code> method that telling it will get from main app or modules.</p>
@@ -754,6 +781,8 @@ Unlike <code class="prettyprint">get()</code> method which will try to get confi
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
@@ -790,6 +819,7 @@ Unlike <code class="prettyprint">get()</code> method which will try to get confi
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>This is depend on <code class="prettyprint">setModule()</code> method that telling it will get from main app or modules.</p>
 </section>
 
@@ -805,6 +835,8 @@ Unlike <code class="prettyprint">get()</code> method which will try to get confi
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -844,6 +876,7 @@ Unlike <code class="prettyprint">get()</code> method which will try to get confi
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>This is depend on <code class="prettyprint">setModule()</code> method that telling it will set to main app or modules.</p>
 <p>Warning! this will not write to the config file.</p>
 </section>
@@ -882,6 +915,8 @@ Unlike <code class="prettyprint">get()</code> method which will try to get confi
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -910,6 +945,7 @@ Unlike <code class="prettyprint">get()</code> method which will try to get confi
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -922,6 +958,8 @@ Unlike <code class="prettyprint">get()</code> method which will try to get confi
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -954,6 +992,7 @@ Unlike <code class="prettyprint">get()</code> method which will try to get confi
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -966,6 +1005,8 @@ Unlike <code class="prettyprint">get()</code> method which will try to get confi
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1092,25 +1133,25 @@ Unlike <code class="prettyprint">get()</code> method which will try to get confi
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Rdb-System-Config.html#property_traceLoadedFiles">$traceLoadedFiles<a href="classes/Rdb-System-Config.html"></li>
-                                                    <li><a href="classes/Rdb-System-Config.html#property_loadedFiles">$loadedFiles<a href="classes/Rdb-System-Config.html"></li>
-                                                    <li><a href="classes/Rdb-System-Config.html#property_moduleSystemName">$moduleSystemName<a href="classes/Rdb-System-Config.html"></li>
+                                                    <li class=""><a href="classes/Rdb-System-Config.html#property_traceLoadedFiles">$traceLoadedFiles</a></li>
+                                                    <li class=""><a href="classes/Rdb-System-Config.html#property_loadedFiles">$loadedFiles</a></li>
+                                                    <li class=""><a href="classes/Rdb-System-Config.html#property_moduleSystemName">$moduleSystemName</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Rdb-System-Config.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Rdb-System-Config.html#method___get">__get()</a></li>
-                                            <li><a href="classes/Rdb-System-Config.html#method_get">get()</a></li>
-                                            <li><a href="classes/Rdb-System-Config.html#method_getDefaultLanguage">getDefaultLanguage()</a></li>
-                                            <li><a href="classes/Rdb-System-Config.html#method_getFile">getFile()</a></li>
-                                            <li><a href="classes/Rdb-System-Config.html#method_getWithoutCache">getWithoutCache()</a></li>
-                                            <li><a href="classes/Rdb-System-Config.html#method_load">load()</a></li>
-                                            <li><a href="classes/Rdb-System-Config.html#method_set">set()</a></li>
-                                            <li><a href="classes/Rdb-System-Config.html#method_setModule">setModule()</a></li>
-                                            <li><a href="classes/Rdb-System-Config.html#method_isLoaded">isLoaded()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Config.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Config.html#method___get">__get()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Config.html#method_get">get()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Config.html#method_getDefaultLanguage">getDefaultLanguage()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Config.html#method_getFile">getFile()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Config.html#method_getWithoutCache">getWithoutCache()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Config.html#method_load">load()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Config.html#method_set">set()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Config.html#method_setModule">setModule()</a></li>
+                                            <li class=""><a href="classes/Rdb-System-Config.html#method_isLoaded">isLoaded()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/rdb.html" class="">Rdb</a>
@@ -67,7 +67,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -79,14 +79,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -135,6 +135,9 @@
 
 
 
+
+
+
 <h3 id="toc">
     Table of Contents
     <a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -156,13 +159,13 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#property_defaultHoneypotNames">$defaultHoneypotNames</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#property_defaultHoneypotNames">$defaultHoneypotNames</a>
     <span>
                         &nbsp;: null|array&lt;string|int, mixed&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#property_honeypotNames">$honeypotNames</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#property_honeypotNames">$honeypotNames</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
@@ -176,28 +179,27 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#method_getHoneypotName">getHoneypotName()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#method_getHoneypotName">getHoneypotName()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get the honeypot name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#method_setAndGetHoneypotName">setAndGetHoneypotName()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#method_setAndGetHoneypotName">setAndGetHoneypotName()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Set and get the field name for use in honeypot. To get only, use `getHoneypotName()` method.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#method_staticGetHoneypotName">staticGetHoneypotName()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#method_staticGetHoneypotName">staticGetHoneypotName()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get honeypot name.</dd>
 
     </dl>
-
 
 
 
@@ -232,6 +234,7 @@
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">null|array&lt;string|int, mixed&gt;</span>
@@ -241,6 +244,8 @@
     
         <section class="phpdocumentor-description"><p>The default honeypot names. Leave null means not set yet. This is for in case <code class="prettyprint">honeypotNames</code> property was override.</p>
 </section>
+
+    
 
     
 
@@ -267,6 +272,7 @@
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
@@ -276,6 +282,8 @@
     
         <section class="phpdocumentor-description"><p>The honeypot names.</p>
 </section>
+
+    
 
     
 
@@ -317,6 +325,9 @@
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -351,6 +362,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -363,6 +375,8 @@
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -405,6 +419,7 @@
     
     
     
+    
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#method_staticGetHoneypotName#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -422,6 +437,8 @@
 
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -542,17 +559,17 @@
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#property_defaultHoneypotNames">$defaultHoneypotNames<a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html"></li>
-                                                    <li><a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#property_honeypotNames">$honeypotNames<a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html"></li>
+                                                    <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#property_defaultHoneypotNames">$defaultHoneypotNames</a></li>
+                                                    <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#property_honeypotNames">$honeypotNames</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#method_getHoneypotName">getHoneypotName()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#method_setAndGetHoneypotName">setAndGetHoneypotName()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#method_staticGetHoneypotName">staticGetHoneypotName()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#method_getHoneypotName">getHoneypotName()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#method_setAndGetHoneypotName">setAndGetHoneypotName()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Libraries-AntiBot.html#method_staticGetHoneypotName">staticGetHoneypotName()</a></li>
                                     </ul>
             </li>
                     </ul>

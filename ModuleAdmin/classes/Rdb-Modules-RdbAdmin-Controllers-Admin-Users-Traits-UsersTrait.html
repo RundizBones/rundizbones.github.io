@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/rdb.html" class="">Rdb</a>
@@ -67,7 +67,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -79,14 +79,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -120,6 +120,7 @@
 
 
 
+
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -134,7 +135,9 @@
                                                                                 
                                              
                                     </dd>
-                                            </dl>
+                                                                </dl>
+
+
 
 
 
@@ -160,35 +163,35 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_addUpdateUserFormValidation">addUpdateUserFormValidation()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_addUpdateUserFormValidation">addUpdateUserFormValidation()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Form validation for add and update user.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_decryptUserFieldsKey">decryptUserFieldsKey()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_decryptUserFieldsKey">decryptUserFieldsKey()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Decrypt user fields key.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_generateUserFieldsKey">generateUserFieldsKey()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_generateUserFieldsKey">generateUserFieldsKey()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Generate user fields key.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_getUserUrlsMethods">getUserUrlsMethods()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_getUserUrlsMethods">getUserUrlsMethods()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Get URLs and methods about user pages.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_logoutUser">logoutUser()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_logoutUser">logoutUser()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -235,6 +238,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Validate required and valid form fields.<br>
 Validate that selected roles did not have higher priority that the user who add or update them.<br>
 Validate username and email must not exists.<br>
@@ -292,6 +296,8 @@ This method was called from <code class="prettyprint">doAddAction()</code> metho
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
@@ -333,6 +339,7 @@ This method was called from <code class="prettyprint">doAddAction()</code> metho
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -345,6 +352,8 @@ This method was called from <code class="prettyprint">doAddAction()</code> metho
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -384,6 +393,7 @@ This method was called from <code class="prettyprint">doAddAction()</code> metho
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Generate keys that can be use in change email confirmation, register confirmation, etc.</p>
 </section>
 
@@ -399,6 +409,8 @@ This method was called from <code class="prettyprint">doAddAction()</code> metho
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -439,6 +451,7 @@ This method was called from <code class="prettyprint">doAddAction()</code> metho
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -451,6 +464,8 @@ This method was called from <code class="prettyprint">doAddAction()</code> metho
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -491,6 +506,7 @@ This method was called from <code class="prettyprint">doAddAction()</code> metho
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -514,6 +530,8 @@ This method was called from <code class="prettyprint">doAddAction()</code> metho
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -630,11 +648,11 @@ This method was called from <code class="prettyprint">doAddAction()</code> metho
                                                 <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_addUpdateUserFormValidation">addUpdateUserFormValidation()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_decryptUserFieldsKey">decryptUserFieldsKey()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_generateUserFieldsKey">generateUserFieldsKey()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_getUserUrlsMethods">getUserUrlsMethods()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_logoutUser">logoutUser()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_addUpdateUserFormValidation">addUpdateUserFormValidation()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_decryptUserFieldsKey">decryptUserFieldsKey()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_generateUserFieldsKey">generateUserFieldsKey()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_getUserUrlsMethods">getUserUrlsMethods()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Controllers-Admin-Users-Traits-UsersTrait.html#method_logoutUser">logoutUser()</a></li>
                                     </ul>
             </li>
                     </ul>

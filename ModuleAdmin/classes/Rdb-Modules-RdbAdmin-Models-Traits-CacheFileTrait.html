@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/rdb.html" class="">Rdb</a>
@@ -67,7 +67,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -79,14 +79,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -115,6 +115,7 @@
     </aside>
 
             <p class="phpdocumentor-summary">Build cache data for model.</p>
+
 
     <section class="phpdocumentor-description"><p>To use cache data, call to <code class="prettyprint">loadCacheData([$this, 'yourBuildCacheContent'])</code>.<br>
 Example:</p>
@@ -198,7 +199,9 @@ class MyModel extends \Rdb\Modules\RdbAdmin\Models\BaseModel
                                                                                 
                                              
                                     </dd>
-                                            </dl>
+                                                                </dl>
+
+
 
 
 
@@ -223,25 +226,25 @@ class MyModel extends \Rdb\Modules\RdbAdmin\Models\BaseModel
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_FileSystem">$FileSystem</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_FileSystem">$FileSystem</a>
     <span>
                         &nbsp;: <abbr title="\Rdb\System\Libraries\FileSystem">FileSystem</abbr>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_storageData">$storageData</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_storageData">$storageData</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_storageFile">$storageFile</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_storageFile">$storageFile</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_storagePath">$storagePath</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_storagePath">$storagePath</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
@@ -255,63 +258,63 @@ class MyModel extends \Rdb\Modules\RdbAdmin\Models\BaseModel
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_resetCacheProperties">resetCacheProperties()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_resetCacheProperties">resetCacheProperties()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Reset cache properties.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_resetGetData">resetGetData()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_resetGetData">resetGetData()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Reset some properties that was used while get the data using `loadCacheData()`.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_beginCacheFileTrait">beginCacheFileTrait()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_beginCacheFileTrait">beginCacheFileTrait()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Trait initialize method.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_buildCacheContentFromResult">buildCacheContentFromResult()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_buildCacheContentFromResult">buildCacheContentFromResult()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Buld cache content from result that got from `PDOStatement::fetchAll()`.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_deleteCachedFile">deleteCachedFile()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_deleteCachedFile">deleteCachedFile()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Delete the file that were built and cached.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_loadCacheData">loadCacheData()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_loadCacheData">loadCacheData()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Load the cache file data into class property. (`storageData`).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_buildCacheFile">buildCacheFile()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_buildCacheFile">buildCacheFile()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Build the cache file.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_getCacheFilePath">getCacheFilePath()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_getCacheFilePath">getCacheFilePath()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get full path to cache file.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_isNeedRebuildCache">isNeedRebuildCache()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_isNeedRebuildCache">isNeedRebuildCache()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -353,6 +356,7 @@ class MyModel extends \Rdb\Modules\RdbAdmin\Models\BaseModel
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Rdb\System\Libraries\FileSystem">FileSystem</abbr></span>
@@ -361,6 +365,8 @@ class MyModel extends \Rdb\Modules\RdbAdmin\Models\BaseModel
 
     
     
+    
+
     
 
 </article>
@@ -386,6 +392,7 @@ class MyModel extends \Rdb\Modules\RdbAdmin\Models\BaseModel
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -395,6 +402,8 @@ class MyModel extends \Rdb\Modules\RdbAdmin\Models\BaseModel
     
         <section class="phpdocumentor-description"><p>The data that was generated from DB. This property is depend on how you set <code class="prettyprint">$content</code> argument in <code class="prettyprint">buildCacheFile()</code> method.</p>
 </section>
+
+    
 
     
 
@@ -421,6 +430,7 @@ class MyModel extends \Rdb\Modules\RdbAdmin\Models\BaseModel
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
@@ -430,6 +440,8 @@ class MyModel extends \Rdb\Modules\RdbAdmin\Models\BaseModel
     
         <section class="phpdocumentor-description"><p>File name with extension for cache. Example: <code class="prettyprint">'tablename-db.php'</code>.</p>
 </section>
+
+    
 
     
 
@@ -456,6 +468,7 @@ class MyModel extends \Rdb\Modules\RdbAdmin\Models\BaseModel
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
@@ -467,6 +480,8 @@ class MyModel extends \Rdb\Modules\RdbAdmin\Models\BaseModel
 Example <code class="prettyprint">STORAGE_PATH . '/cache/tablename'</code> for store data from selected table in DB.
 Only set this if you want to use cache.</p>
 </section>
+
+    
 
     
 
@@ -505,6 +520,7 @@ Only set this if you want to use cache.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>This is useful when you call to any methods that have called to <code class="prettyprint">loadCacheData()</code> method on this trait.<br>
 This method will be reset <code class="prettyprint">storageData</code>, <code class="prettyprint">storageFile</code>, <code class="prettyprint">storagePath</code> properties.</p>
 </section>
@@ -526,6 +542,8 @@ This method will be reset <code class="prettyprint">storageData</code>, <code cl
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -555,6 +573,7 @@ This method will be reset <code class="prettyprint">storageData</code>, <code cl
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>This is useful when you call to extended class that is get a cache data row using <code class="prettyprint">loadCacheData()</code> and you want to call it again or it is in the loop.<br>
 This method will be reset <code class="prettyprint">storageData</code>, <code class="prettyprint">storageFile</code> properties.</p>
 </section>
@@ -576,6 +595,8 @@ This method will be reset <code class="prettyprint">storageData</code>, <code cl
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -605,6 +626,7 @@ This method will be reset <code class="prettyprint">storageData</code>, <code cl
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>This method must be called before it can be working.</p>
 </section>
 
@@ -620,6 +642,8 @@ This method will be reset <code class="prettyprint">storageData</code>, <code cl
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -652,6 +676,7 @@ This method will be reset <code class="prettyprint">storageData</code>, <code cl
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -673,6 +698,8 @@ This method will be reset <code class="prettyprint">storageData</code>, <code cl
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -712,6 +739,7 @@ This method will be reset <code class="prettyprint">storageData</code>, <code cl
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>This method was called from <code class="prettyprint">buildCacheFile()</code>.</p>
 </section>
 
@@ -734,6 +762,8 @@ This method will be reset <code class="prettyprint">storageData</code>, <code cl
 
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -763,6 +793,7 @@ This method will be reset <code class="prettyprint">storageData</code>, <code cl
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Also build it if it is not exists or too old (expired).</p>
 <p>You can access cache data via <code class="prettyprint">storageData</code> property.</p>
 </section>
@@ -780,6 +811,8 @@ The callback must return content string of generated php data for write to cache
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -811,6 +844,7 @@ The callback must return content string of generated php data for write to cache
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>This method was called from <code class="prettyprint">getCacheFilePath()</code>.</p>
 </section>
 
@@ -826,6 +860,8 @@ The callback must return content string of generated php data for write to cache
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -865,6 +901,7 @@ The callback must return content string of generated php data for write to cache
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>This method was called from <code class="prettyprint">loadCacheData()</code>.</p>
 </section>
 
@@ -880,6 +917,8 @@ The callback must return content string of generated php data for write to cache
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -919,10 +958,13 @@ The callback must return content string of generated php data for write to cache
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>This method was called from <code class="prettyprint">getCacheFilePath()</code>, <code class="prettyprint">MetaFieldsTrait-&gt;listObjectsFields()</code>.</p>
 </section>
 
     
+    
+
     
 
             <section>
@@ -1047,24 +1089,24 @@ The callback must return content string of generated php data for write to cache
                                     <li class="phpdocumentor-on-this-page-section__title">Properties</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_FileSystem">$FileSystem</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_storageData">$storageData</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_storageFile">$storageFile</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_storagePath">$storagePath</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_FileSystem">$FileSystem</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_storageData">$storageData</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_storageFile">$storageFile</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#property_storagePath">$storagePath</a></li>
                                     </ul>
             </li>
                                     <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_resetCacheProperties">resetCacheProperties()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_resetGetData">resetGetData()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_beginCacheFileTrait">beginCacheFileTrait()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_buildCacheContentFromResult">buildCacheContentFromResult()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_deleteCachedFile">deleteCachedFile()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_loadCacheData">loadCacheData()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_buildCacheFile">buildCacheFile()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_getCacheFilePath">getCacheFilePath()</a></li>
-                                            <li><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_isNeedRebuildCache">isNeedRebuildCache()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_resetCacheProperties">resetCacheProperties()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_resetGetData">resetGetData()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_beginCacheFileTrait">beginCacheFileTrait()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_buildCacheContentFromResult">buildCacheContentFromResult()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_deleteCachedFile">deleteCachedFile()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_loadCacheData">loadCacheData()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_buildCacheFile">buildCacheFile()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_getCacheFilePath">getCacheFilePath()</a></li>
+                                            <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Models-Traits-CacheFileTrait.html#method_isNeedRebuildCache">isNeedRebuildCache()</a></li>
                                     </ul>
             </li>
                     </ul>

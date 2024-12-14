@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/rdb.html" class="">Rdb</a>
@@ -67,7 +67,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -79,14 +79,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -121,6 +121,7 @@
 
             <p class="phpdocumentor-summary">Module admin interface.</p>
 
+
     <section class="phpdocumentor-description"><p>The interface for set permissions, dashboard widgets, menu items that will be use in RdbAdmin module.</p>
 </section>
 
@@ -139,7 +140,9 @@
                                                                                 
                                              
                                     </dd>
-                                            </dl>
+                                                                </dl>
+
+
 
 
 
@@ -165,35 +168,35 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method___construct">__construct()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>The class constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_dashboardWidgets">dashboardWidgets()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_dashboardWidgets">dashboardWidgets()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Get admin dashboard (admin home) widgets HTML.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_definePermissions">definePermissions()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_definePermissions">definePermissions()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Define module&#039;s permissions.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_menuItems">menuItems()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_menuItems">menuItems()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Set the menu items.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_permissionDisplayText">permissionDisplayText()</a>
+    <a class="" href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_permissionDisplayText">permissionDisplayText()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -239,6 +242,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -251,6 +255,8 @@
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -282,6 +288,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>If your module doesn't have any dashboard widget, create this function and return empty array.<br>
 The return array format should be.</p>
 <pre class="prettyprint">
@@ -302,6 +309,8 @@ return [
 </section>
 
     
+    
+
     
 
             <section>
@@ -340,6 +349,7 @@ return [
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>If your module doesn't want to use permission feature, create this function and return empty array.<br>
 All the permissions for your module will be define here to make it able to manage via admin page.<br>
 Example:</p>
@@ -356,6 +366,8 @@ return array(
 </section>
 
     
+    
+
     
 
             <section>
@@ -394,6 +406,7 @@ return array(
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>If your module doesn't want to use menu item feature, create this function and return empty array.<br>
 The menu items will be appears on admin side bar.<br>
 Example:</p>
@@ -461,6 +474,8 @@ If the ID in main menu item is duplicated with existing menu item, it will be ad
     
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
@@ -497,6 +512,7 @@ If the ID in main menu item is duplicated with existing menu item, it will be ad
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>If your module doesn't want to use permission feature, create this function and return empty string.<br>
 The display text here did not translated yet.<br>
 For example: the keyword is 'RdbAdminUsers', the display text is 'Manage users' in English.<br>
@@ -551,6 +567,8 @@ if (!empty($key)) {
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -677,11 +695,11 @@ Return string (or empty string) if permission keyword is specified in parameter.
                             <li class="phpdocumentor-on-this-page-section__title">Methods</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method___construct">__construct()</a></li>
-                                                    <li><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_dashboardWidgets">dashboardWidgets()</a></li>
-                                                    <li><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_definePermissions">definePermissions()</a></li>
-                                                    <li><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_menuItems">menuItems()</a></li>
-                                                    <li><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_permissionDisplayText">permissionDisplayText()</a></li>
+                                                    <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method___construct">__construct()</a></li>
+                                                    <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_dashboardWidgets">dashboardWidgets()</a></li>
+                                                    <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_definePermissions">definePermissions()</a></li>
+                                                    <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_menuItems">menuItems()</a></li>
+                                                    <li class=""><a href="classes/Rdb-Modules-RdbAdmin-Interfaces-ModuleAdmin.html#method_permissionDisplayText">permissionDisplayText()</a></li>
                                             </ul>
                 </li>
             
