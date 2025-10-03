@@ -1136,6 +1136,11 @@ Search.appendIndex(
             "summary": "Get\u0020languages\u0020and\u0020its\u0020configuration.",
             "url": "classes/Rdb-Modules-RdbAdmin-Controllers-Admin-UI-XhrCommonDataController.html#method_getLanguages"
         },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Controllers\\Admin\\UI\\XhrCommonDataController\u003A\u003AgetOtherTranslation\u0028\u0029",
+            "name": "getOtherTranslation",
+            "summary": "Get\u0020other\u0020translations\u0020for\u0020use\u0020with\u0020something\u0020else\u0020on\u0020the\u0020page.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Controllers-Admin-UI-XhrCommonDataController.html#method_getOtherTranslation"
+        },                {
             "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Controllers\\Admin\\UI\\XhrCommonDataController\u003A\u003AgetPageAlertMessages\u0028\u0029",
             "name": "getPageAlertMessages",
             "summary": "Get\u0020page\u0020alert\u0020message\u0028s\u0029.",
@@ -2890,6 +2895,26 @@ Search.appendIndex(
             "name": "sort",
             "summary": "",
             "url": "classes/Rdb-Modules-RdbAdmin-Libraries-SPLIterators-SortableIterator.html#property_sort"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Views",
+            "name": "Views",
+            "summary": "The\u0020Views\u0020class\u0020that\u0020extends\u0020framework\u0020\u0060Views\u0060\u0020class.",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Views.html"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Views\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Views.html#method___construct"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Views\u003A\u003AlocateViews\u0028\u0029",
+            "name": "locateViews",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Views.html#method_locateViews"
+        },                {
+            "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Libraries\\Views\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "\u007B\u0040inheritDoc\u007D",
+            "url": "classes/Rdb-Modules-RdbAdmin-Libraries-Views.html#method_render"
         },                {
             "fqsen": "\\Rdb\\Modules\\RdbAdmin\\Middleware\\APIAccess",
             "name": "APIAccess",
